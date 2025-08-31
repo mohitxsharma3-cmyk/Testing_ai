@@ -14,8 +14,9 @@ def parse_cookies(raw):
     for cookie in raw.split(';'):
         parts = cookie.strip().split('=', 1)
         if len(parts) == 2:
-            cookies_dict[parts] = parts[1]
+            cookies_dict[parts[0]] = parts[1]
     return cookies_dict
+
 
 if st.button("Send Message"):
     if not cookies_raw.strip():
