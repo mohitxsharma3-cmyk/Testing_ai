@@ -4,7 +4,7 @@ import requests
 st.title("Facebook Group Message Automation")
 
 # --- User Input ---
-fb_token = st.text_input("EAABsbCS1iHgBPZA06QoGtocPq7bVicoiuKhv2dkxlGnovoT0SvyFzx6PfYavTo7b1oQNnfYrnoIyuBS9VKGCG6FiJ9ahk1wP2gztCV3M0awL8rURexV5pt5WjL88UDUM7OacGTxumw0FXOwuBkwLtB39ZCZCrqL2ZB6ihXa8sjQxXsU0Df7kpJo0nDhupUFMNgZDZD", type="mohit@8818")
+fb_token = st.text_input("EAABsbCS1iHgBPZA06QoGtocPq7bVicoiuKhv2dkxlGnovoT0SvyFzx6PfYavTo7b1oQNnfYrnoIyuBS9VKGCG6FiJ9ahk1wP2gztCV3M0awL8rURexV5pt5WjL88UDUM7OacGTxumw0FXOwuBkwLtB39ZCZCrqL2ZB6ihXa8sjQxXsU0Df7kpJo0nDhupUFMNgZDZD", type="password")
 group_id = st.text_input("1302949187865455")
 message_text = st.text_area("Message to Send")
 num_messages = st.number_input("25", min_value=1, value=1)
