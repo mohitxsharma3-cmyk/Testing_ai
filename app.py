@@ -1,5 +1,42 @@
 import streamlit as st
-import requests
+
+# --- Custom CSS for colorful gradient background and watermark ---
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background: linear-gradient(135deg, #f7b733, #fc4a1a, #12c2e9, #c471f5, #f64f59);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+        position: relative;
+    }
+    @keyframes gradientBG {
+        0% {background-position:0% 50%}
+        50% {background-position:100% 50%}
+        100% {background-position:0% 50%}
+    }
+    .watermark {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        font-size: 60px;
+        color: rgba(255,255,255,0.25);
+        font-weight: bold;
+        z-index: 9999;
+        pointer-events: none;
+        user-select: none;
+        font-family: sans-serif;
+        transform: rotate(-10deg);
+    }
+    </style>
+    <div class="watermark">Mohit</div>
+    """, unsafe_allow_html=True
+)
+
+# --- Your Streamlit app code below ---
+st.title("Facebook Group Message Automation")
+st.write("This demo uses a colourful animated background with a watermark.")
+
 
 st.title("Facebook Group Message Automation")
 
